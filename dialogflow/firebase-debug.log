@@ -1,0 +1,209 @@
+[debug] [2023-03-27T14:34:41.225Z] ----------------------------------------------------------------------
+[debug] [2023-03-27T14:34:41.228Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\NITRO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2023-03-27T14:34:41.228Z] CLI Version:   11.25.1
+[debug] [2023-03-27T14:34:41.229Z] Platform:      win32
+[debug] [2023-03-27T14:34:41.229Z] Node Version:  v16.17.0
+[debug] [2023-03-27T14:34:41.230Z] Time:          Mon Mar 27 2023 21:34:41 GMT+0700 (เวลาอินโดจีน)
+[debug] [2023-03-27T14:34:41.230Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-27T14:34:41.235Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-03-27T14:34:41.376Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-27T14:34:41.377Z] > authorizing via signed-in user (piyachol.ch@kkumail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2023-03-27T14:34:41.391Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] !  ui: Emulator UI unable to start on port 4000, starting on 4001 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4001 instead."}}
+[debug] [2023-03-27T14:34:41.393Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4001},{"address":"::1","family":"IPv6","port":4001}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project gler2-wqhk. This may result in unexpected behavior. 
+[debug] [2023-03-27T14:34:41.405Z] [hub] writing locator at C:\Users\NITRO\AppData\Local\Temp\hub-gler2-wqhk.json
+[debug] [2023-03-27T14:34:41.455Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-03-27T14:34:41.458Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-03-27T14:34:41.459Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4001},{"address":"::1","family":"IPv6","port":4001}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2023-03-27T14:34:41.470Z] defaultcredentials: writing to file C:\Users\NITRO\AppData\Roaming\firebase\piyachol_ch_kkumail.com_application_default_credentials.json
+[debug] [2023-03-27T14:34:41.476Z] Setting GAC to C:\Users\NITRO\AppData\Roaming\firebase\piyachol_ch_kkumail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\NITRO\\AppData\\Roaming\\firebase\\piyachol_ch_kkumail.com_application_default_credentials.json"}}
+[debug] [2023-03-27T14:34:41.478Z] > refreshing access token with scopes: []
+[debug] [2023-03-27T14:34:41.480Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-03-27T14:34:41.480Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-03-27T14:34:41.672Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-03-27T14:34:41.672Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-03-27T14:34:41.681Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gler2-wqhk/adminSdkConfig [none]
+[debug] [2023-03-27T14:34:41.989Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-03-27T14:34:41.989Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2023-03-27T14:34:42.134Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gler2-wqhk/adminSdkConfig 200
+[debug] [2023-03-27T14:34:42.134Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gler2-wqhk/adminSdkConfig {"projectId":"gler2-wqhk","databaseURL":"https://gler2-wqhk-default-rtdb.firebaseio.com","storageBucket":"gler2-wqhk.appspot.com"}
+[debug] [2023-03-27T14:34:42.175Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-03-27T14:34:42.175Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-03-27T14:34:42.175Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\NITRO\\.cache\\firebase\\emulators\\ui-v1.11.4\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\NITRO\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.4\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-03-27T14:34:42.397Z] Web / API server started at 127.0.0.1:4001
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4001\n"}}
+[debug] [2023-03-27T14:34:42.398Z] Web / API server started at ::1:4001
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4001\n"}}
+[info] i  functions: Watching "D:\4_2\admin-backend\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"D:\\4_2\\admin-backend\\functions\" for Cloud Functions..."}}
+[debug] [2023-03-27T14:34:42.467Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2023-03-27T14:34:42.468Z] getFunctionsSDKVersion encountered error:Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\NITRO\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\NITRO\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\NITRO\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\NITRO\AppData\Roaming\npm\node_modules\firebase-tools\lib\gcp\cloudfunctions.js
+- C:\Users\NITRO\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\backend.js
+- C:\Users\NITRO\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\NITRO\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\NITRO\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\NITRO\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\NITRO\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\NITRO\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\NITRO\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\NITRO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\NITRO\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\NITRO\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\NITRO\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\NITRO\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\gcp\\cloudfunctions.js","C:\\Users\\NITRO\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\backend.js","C:\\Users\\NITRO\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\NITRO\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\NITRO\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\NITRO\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\commandUtils.js","C:\\Users\\NITRO\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\database-get.js","C:\\Users\\NITRO\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\NITRO\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\NITRO\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2023-03-27T14:34:42.469Z] checkFunctionsSDKVersion encountered error:Invalid Version:  {}
+[debug] [2023-03-27T14:34:42.470Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-27T14:34:42.470Z] Building nodejs source
+[debug] [2023-03-27T14:34:42.471Z] Failed to find version of module node: reached end of search path D:\4_2\admin-backend\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-27T14:34:42.473Z] Could not parse firebase-functions version '' into semver. Falling back to parseTriggers.
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Error parsing triggers: Cannot find module 'firebase-functions'
+Require stack:
+- D:\4_2\admin-backend\functions\index.js
+- C:\Users\NITRO\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\triggerParser.js
+
+Try running "npm install" in your functions directory before deploying. {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Error parsing triggers: Cannot find module 'firebase-functions'\nRequire stack:\n- D:\\4_2\\admin-backend\\functions\\index.js\n- C:\\Users\\NITRO\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\triggerParser.js\n\nTry running \"npm install\" in your functions directory before deploying."}}
+[info] i  functions: Watching "D:\4_2\admin-backend\admin-backend" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"D:\\4_2\\admin-backend\\admin-backend\" for Cloud Functions..."}}
+[debug] [2023-03-27T14:34:42.591Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-27T14:34:44.655Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-27T14:34:44.655Z] Building nodejs source
+[debug] [2023-03-27T14:34:44.655Z] Failed to find version of module node: reached end of search path D:\4_2\admin-backend\admin-backend\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-27T14:34:44.659Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-27T14:34:44.681Z] Found firebase-functions binary at 'D:\4_2\admin-backend\admin-backend\node_modules\.bin\firebase-functions'
+[debug] [2023-03-27T14:34:45.100Z] Serving at port 8604
+
+[debug] [2023-03-27T14:34:45.322Z] Got response from /__/functions.yaml {"endpoints":{"adminbackend":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"adminbackend"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-27T14:34:45.336Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: adminbackend. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: adminbackend."}}
+[info] +  functions[us-central1-adminbackend]: http function initialized (http://127.0.0.1:5001/gler2-wqhk/us-central1/adminbackend). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/gler2-wqhk/us-central1/adminbackend)."}}
+[info] i  functions: Watching "D:\4_2\admin-backend\dialogflow" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"D:\\4_2\\admin-backend\\dialogflow\" for Cloud Functions..."}}
+[debug] [2023-03-27T14:34:45.357Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2023-03-27T14:34:45.358Z] getFunctionsSDKVersion encountered error:Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\NITRO\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\NITRO\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\NITRO\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\NITRO\AppData\Roaming\npm\node_modules\firebase-tools\lib\gcp\cloudfunctions.js
+- C:\Users\NITRO\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\backend.js
+- C:\Users\NITRO\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\NITRO\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\NITRO\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\NITRO\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\NITRO\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\NITRO\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\NITRO\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\NITRO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\NITRO\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\NITRO\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\NITRO\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\NITRO\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\gcp\\cloudfunctions.js","C:\\Users\\NITRO\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\backend.js","C:\\Users\\NITRO\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\NITRO\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\NITRO\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\NITRO\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\commandUtils.js","C:\\Users\\NITRO\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\database-get.js","C:\\Users\\NITRO\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\NITRO\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\NITRO\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2023-03-27T14:34:45.358Z] checkFunctionsSDKVersion encountered error:Invalid Version:  {}
+[debug] [2023-03-27T14:34:45.359Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "actions-on-google": "^2.14.0",
+    "axios": "^0.18.1",
+    "dialogflow": "^1.2.0",
+    "dialogflow-fulfillment": "^0.6.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-27T14:34:45.359Z] Building nodejs source
+[debug] [2023-03-27T14:34:45.359Z] Failed to find version of module node: reached end of search path D:\4_2\admin-backend\dialogflow\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-27T14:34:45.360Z] Could not parse firebase-functions version '' into semver. Falling back to parseTriggers.
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Error parsing triggers: Cannot find module 'firebase-functions'
+Require stack:
+- D:\4_2\admin-backend\dialogflow\index.js
+- C:\Users\NITRO\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\triggerParser.js
+
+Try running "npm install" in your functions directory before deploying. {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Error parsing triggers: Cannot find module 'firebase-functions'\nRequire stack:\n- D:\\4_2\\admin-backend\\dialogflow\\index.js\n- C:\\Users\\NITRO\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\triggerParser.js\n\nTry running \"npm install\" in your functions directory before deploying."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4001/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4001/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
